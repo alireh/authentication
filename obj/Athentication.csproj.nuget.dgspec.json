@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Source\\Repos\\sqlite-athentication\\Athentication.csproj": {}
+    "C:\\Project\\Authentication\\authentication\\Athentication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Source\\Repos\\sqlite-athentication\\Athentication.csproj": {
+    "C:\\Project\\Authentication\\authentication\\Athentication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\sqlite-athentication\\Athentication.csproj",
+        "projectUniqueName": "C:\\Project\\Authentication\\authentication\\Athentication.csproj",
         "projectName": "Athentication",
-        "projectPath": "C:\\Users\\user\\Source\\Repos\\sqlite-athentication\\Athentication.csproj",
+        "projectPath": "C:\\Project\\Authentication\\authentication\\Athentication.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Source\\Repos\\sqlite-athentication\\obj\\",
+        "outputPath": "C:\\Project\\Authentication\\authentication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
