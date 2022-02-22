@@ -132,4 +132,3 @@ C:\Project\Authentication\authentication\obj\Release\netcoreapp3.1\Athentication
 C:\Project\Authentication\authentication\obj\Release\netcoreapp3.1\Athentication.dll
 C:\Project\Authentication\authentication\obj\Release\netcoreapp3.1\Athentication.pdb
 C:\Project\Authentication\authentication\obj\Release\netcoreapp3.1\Athentication.genruntimeconfig.cache
-C:\Project\Authentication\authentication\obj\Release\netcoreapp3.1\Athentication.csprojAssemblyReference.cache

@@ -460,7 +460,6 @@ namespace Athentication.Util
                 for (int i = 0; i < _reportDt.Rows.Count; i++)
                 {
                     var item = _reportDt.Rows[i];
-                    bool? gender = item[7].ToString() == "1";
 
                     var id = int.Parse(item[0].ToString());
                     var reportInfo = new ReportInfo
