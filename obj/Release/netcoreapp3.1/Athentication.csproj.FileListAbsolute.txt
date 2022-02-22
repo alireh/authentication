@@ -120,7 +120,6 @@ C:\Project\Authentication\authentication\bin\Release\netcoreapp3.1\runtimes\win-
 C:\Project\Authentication\authentication\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Project\Authentication\authentication\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Project\Authentication\authentication\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Project\Authentication\authentication\obj\Release\netcoreapp3.1\Athentication.csprojAssemblyReference.cache
 C:\Project\Authentication\authentication\obj\Release\netcoreapp3.1\Athentication.AssemblyInfoInputs.cache
 C:\Project\Authentication\authentication\obj\Release\netcoreapp3.1\Athentication.AssemblyInfo.cs
 C:\Project\Authentication\authentication\obj\Release\netcoreapp3.1\Athentication.csproj.CoreCompileInputs.cache
@@ -133,3 +132,4 @@ C:\Project\Authentication\authentication\obj\Release\netcoreapp3.1\Athentication
 C:\Project\Authentication\authentication\obj\Release\netcoreapp3.1\Athentication.dll
 C:\Project\Authentication\authentication\obj\Release\netcoreapp3.1\Athentication.pdb
 C:\Project\Authentication\authentication\obj\Release\netcoreapp3.1\Athentication.genruntimeconfig.cache
+C:\Project\Authentication\authentication\obj\Release\netcoreapp3.1\Athentication.csprojAssemblyReference.cache
