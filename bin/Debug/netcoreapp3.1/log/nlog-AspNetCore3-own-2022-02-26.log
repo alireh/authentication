@@ -1,0 +1,148 @@
+2022-02-26 14:45:29.8804|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 14:45:34.3032|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://127.0.0.1:13350 |url: |action: |
+2022-02-26 14:45:34.3416|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2022-02-26 14:45:34.3416|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2022-02-26 14:45:34.3416|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Project\Authentication\authentication |url: |action: |
+2022-02-26 14:46:14.2735|0|INFO|Athentication.Controllers.MainController|Signin |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:46:18.5565|0|ERROR|Athentication.Controllers.MainController|Signin Message : SQL logic error
+near "TABLE": syntax error |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:50:02.5841|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 14:50:07.5755|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://127.0.0.1:5842 |url: |action: |
+2022-02-26 14:50:07.6203|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2022-02-26 14:50:07.6203|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2022-02-26 14:50:07.6203|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Project\Authentication\authentication |url: |action: |
+2022-02-26 14:50:09.0864|0|INFO|Athentication.Controllers.MainController|Signin |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:50:45.8562|0|ERROR|Athentication.Controllers.MainController|Signin Message : SQL logic error
+near "TABLE": syntax error |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:52:49.7596|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 14:52:53.8524|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://127.0.0.1:5257 |url: |action: |
+2022-02-26 14:52:53.9183|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2022-02-26 14:52:53.9183|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2022-02-26 14:52:53.9183|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Project\Authentication\authentication |url: |action: |
+2022-02-26 14:53:25.9290|0|INFO|Athentication.Controllers.MainController|Signin |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:53:28.8805|0|INFO|Athentication.Util.SqliteManager|GetUserCount |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:53:28.8840|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:53:28.9607|0|INFO|Athentication.Util.SqliteManager|GetUser |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:53:29.4845|0|INFO|Athentication.Util.SqliteManager|EditUser |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:53:29.4845|0|INFO|Athentication.Util.SqliteManager|ExecuteQuery |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:53:29.5220|0|INFO|Athentication.Util.SqliteManager|GetUser |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:53:29.5592|0|INFO|Athentication.Util.SqliteManager|AddReport |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:53:29.5592|0|INFO|Athentication.Util.SqliteManager|GetReportCount |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:53:29.5592|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:53:29.5592|0|INFO|Athentication.Util.SqliteManager|ConvertToQueryValue |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:53:29.5723|0|INFO|Athentication.Util.SqliteManager|ExecuteQuery |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:05:04.0573|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 15:05:08.0604|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://127.0.0.1:4512 |url: |action: |
+2022-02-26 15:05:08.0941|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2022-02-26 15:05:08.0941|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2022-02-26 15:05:08.0941|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Project\Authentication\authentication |url: |action: |
+2022-02-26 15:05:08.8190|0|INFO|Athentication.Controllers.MainController|Signin |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:05:09.6082|0|ERROR|Athentication.Controllers.MainController|Signin Message : SQL logic error
+unrecognized token: "', 20, 1);" |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:05:26.6801|0|INFO|Athentication.Controllers.MainController|Signin |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:05:28.9473|0|INFO|Athentication.Util.SqliteManager|GetUserCount |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:05:33.0294|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:07:12.2105|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 15:07:33.8433|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 15:07:34.3870|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://127.0.0.1:37630 |url: |action: |
+2022-02-26 15:07:34.4097|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2022-02-26 15:07:34.4097|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2022-02-26 15:07:34.4097|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Project\Authentication\authentication |url: |action: |
+2022-02-26 15:08:40.9838|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 15:08:45.6105|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://127.0.0.1:40008 |url: |action: |
+2022-02-26 15:08:45.6618|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2022-02-26 15:08:45.6661|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2022-02-26 15:08:45.6661|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Project\Authentication\authentication |url: |action: |
+2022-02-26 15:08:46.5772|0|INFO|Athentication.Controllers.MainController|Signin |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:10:29.6008|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 15:10:33.8566|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://127.0.0.1:27821 |url: |action: |
+2022-02-26 15:10:33.9152|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2022-02-26 15:10:33.9152|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2022-02-26 15:10:33.9152|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Project\Authentication\authentication |url: |action: |
+2022-02-26 15:10:40.3573|0|INFO|Athentication.Controllers.MainController|Signin |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:10:40.8704|0|INFO|Athentication.Util.SqliteManager|GetUserCount |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:10:40.8863|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:10:56.0805|0|INFO|Athentication.Controllers.MainController|Signin |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:10:56.7093|0|INFO|Athentication.Util.SqliteManager|GetUserCount |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:10:56.7294|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:11:05.8606|0|INFO|Athentication.Util.SqliteManager|GetUserCount |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:11:14.1520|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:13:11.6329|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 15:15:05.0859|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 15:15:05.8930|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://127.0.0.1:41971 |url: |action: |
+2022-02-26 15:15:05.9220|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2022-02-26 15:15:05.9220|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2022-02-26 15:15:05.9220|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Project\Authentication\authentication |url: |action: |
+2022-02-26 15:23:01.6362|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 15:23:13.2938|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://127.0.0.1:41719 |url: |action: |
+2022-02-26 15:23:13.3287|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2022-02-26 15:23:13.3287|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2022-02-26 15:23:13.3287|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Project\Authentication\authentication |url: |action: |
+2022-02-26 15:23:22.9409|0|INFO|Athentication.Controllers.MainController|Signin |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:23:27.1190|0|INFO|Athentication.Util.SqliteManager|GetUserCount |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:23:33.4233|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:23:37.8715|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:23:49.1597|0|INFO|Athentication.Util.SqliteManager|GetUser |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:23:49.2548|0|INFO|Athentication.Util.SqliteManager|EditUser |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:23:49.2582|0|INFO|Athentication.Util.SqliteManager|ExecuteQuery |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:23:49.2854|0|INFO|Athentication.Util.SqliteManager|GetUser |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:23:49.3188|0|INFO|Athentication.Util.SqliteManager|AddReport |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:23:49.3218|0|INFO|Athentication.Util.SqliteManager|GetReportCount |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:23:49.3218|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:23:49.3218|0|INFO|Athentication.Util.SqliteManager|ConvertToQueryValue |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:23:49.3383|0|INFO|Athentication.Util.SqliteManager|ExecuteQuery |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:24:05.6478|0|INFO|Athentication.Controllers.MainController|Signin |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:24:05.6478|0|INFO|Athentication.Util.SqliteManager|GetUserCount |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:24:05.7203|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:24:05.7489|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:46:57.2303|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 15:47:01.1588|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://127.0.0.1:7841 |url: |action: |
+2022-02-26 15:47:01.1857|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2022-02-26 15:47:01.1857|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2022-02-26 15:47:01.1857|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Project\Authentication\authentication |url: |action: |
+2022-02-26 15:47:08.2871|0|INFO|Athentication.Controllers.MainController|Signin |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:47:08.8118|0|INFO|Athentication.Util.SqliteManager|GetUserCount |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:47:08.8315|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:47:08.8581|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:47:19.1621|0|INFO|Athentication.Controllers.MainController|Signin |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:47:19.9903|0|INFO|Athentication.Util.SqliteManager|GetUserCount |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:47:20.0151|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:47:20.0288|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:47:26.5505|0|INFO|Athentication.Util.SqliteManager|GetUserCount |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:47:27.5928|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:47:34.0074|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:48:01.7561|0|INFO|Athentication.Controllers.MainController|Signin |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:48:02.4966|0|INFO|Athentication.Util.SqliteManager|GetUserCount |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:48:02.5417|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:48:02.5417|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:48:02.6049|0|INFO|Athentication.Util.SqliteManager|GetUser |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:48:02.7013|0|INFO|Athentication.Util.SqliteManager|EditUser |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:48:02.7013|0|INFO|Athentication.Util.SqliteManager|ExecuteQuery |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:48:08.4833|0|INFO|Athentication.Util.SqliteManager|GetUser |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:48:10.7694|0|INFO|Athentication.Util.SqliteManager|AddReport |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:48:10.7753|0|INFO|Athentication.Util.SqliteManager|GetReportCount |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:48:10.7753|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:48:10.7753|0|INFO|Athentication.Util.SqliteManager|ConvertToQueryValue |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:48:10.7753|0|INFO|Athentication.Util.SqliteManager|ExecuteQuery |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 15:48:40.8636|0|INFO|Athentication.Controllers.MainController|GetReports |url: https://localhost/api/authentication/reports|action: GetReports|
+2022-02-26 15:48:56.5133|0|ERROR|Athentication.Controllers.MainController|GetReports Message : The hashtype is not supported |url: https://localhost/api/authentication/reports|action: GetReports|
+2022-02-26 15:48:59.3249|0|INFO|Athentication.Controllers.MainController|GetReports |url: https://localhost/api/authentication/reports|action: GetReports|
+2022-02-26 15:50:47.8627|0|ERROR|Athentication.Controllers.MainController|GetReports Message : The hashtype is not supported |url: https://localhost/api/authentication/reports|action: GetReports|
+2022-02-26 15:50:57.0819|0|INFO|Athentication.Controllers.MainController|GetReports |url: https://localhost/api/authentication/reports|action: GetReports|
+2022-02-26 15:50:57.1817|0|ERROR|Athentication.Controllers.MainController|GetReports Message : The hashtype is not supported |url: https://localhost/api/authentication/reports|action: GetReports|
+2022-02-26 15:51:13.3418|0|INFO|Athentication.Controllers.MainController|GetReports |url: https://localhost/api/authentication/reports|action: GetReports|
+2022-02-26 15:55:17.9240|0|INFO|Athentication.Controllers.MainController|GetReports |url: https://localhost/api/authentication/reports|action: GetReports|
+2022-02-26 15:55:25.3223|0|INFO|Athentication.Controllers.MainController|GetReports |url: https://localhost/api/authentication/reports|action: GetReports|
+2022-02-26 15:55:38.6955|0|INFO|Athentication.Util.SqliteManager|GetReports |url: https://localhost/api/authentication/reports|action: GetReports|
+2022-02-26 15:56:05.0397|0|INFO|Athentication.Controllers.MainController|GetReports |url: https://localhost/api/authentication/reports|action: GetReports|
+2022-02-26 15:56:06.7716|0|ERROR|Athentication.Controllers.MainController|GetReports Message : The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters. |url: https://localhost/api/authentication/reports|action: GetReports|
+2022-02-26 15:56:15.0216|0|INFO|Athentication.Controllers.MainController|GetReports |url: https://localhost/api/authentication/reports|action: GetReports|
+2022-02-26 15:56:15.0652|0|INFO|Athentication.Util.SqliteManager|GetReports |url: https://localhost/api/authentication/reports|action: GetReports|
+2022-02-26 16:00:21.3340|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 16:00:25.6367|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://127.0.0.1:20289 |url: |action: |
+2022-02-26 16:00:25.6779|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2022-02-26 16:00:25.6802|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2022-02-26 16:00:25.6802|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Project\Authentication\authentication |url: |action: |
+2022-02-26 16:00:38.9327|0|INFO|Athentication.Controllers.MainController|GetUsers |url: https://localhost/api/authentication/users|action: GetUsers|
+2022-02-26 16:00:50.3289|0|INFO|Athentication.Controllers.MainController|GetUsers |url: https://localhost/api/authentication/users|action: GetUsers|
+2022-02-26 16:00:50.5499|0|INFO|Athentication.Util.SqliteManager|GetUsers |url: https://localhost/api/authentication/users|action: GetUsers|

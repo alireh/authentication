@@ -1,4 +1,5 @@
-﻿using Athentication.Entity;
+﻿using Microsoft.Net.Http.Headers;
+using Athentication.Entity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -121,7 +122,7 @@ namespace Athentication.Controllers
         /// </summary>
         /// <param name="userInfo">The user informations </param>
         /// <returns>Response Code, Data and message.</returns>
-        [HttpGet]
+        [HttpPost]
         [Route("/api/authentication/signin")]
         public async Task<ResponseModel> Signin([FromBody] UserAuthInfo userInfo)
         {
@@ -130,8 +131,8 @@ namespace Athentication.Controllers
                 try
                 {
                     logger?.LogInformation("Signin");
-                    var exists = SqliteManager.Instance.ExistsUser(userInfo.Username, userInfo.Password);
-                    if (exists)
+                    var token = SqliteManager.Instance.ExistsUser(userInfo.Username, userInfo.Password);
+                    if (token != null)
                     {
                         var now = DateTime.Now;
                         var user = SqliteManager.Instance.GetUser(userInfo.Username);
@@ -144,12 +145,14 @@ namespace Athentication.Controllers
                         });
                         return new ResponseModel
                         {
+                            content = token,
                             message = "success",
                             status = 200
                         };
                     }
                     return new ResponseModel
                     {
+                        content = null,
                         message = "failed",
                         status = 404
                     };
@@ -159,6 +162,7 @@ namespace Athentication.Controllers
                     logger?.LogError($"Signin Message : {ex.Message}");
                     return new ResponseModel
                     {
+                        content = null,
                         message = "failed",
                         status = 500
                     };
@@ -229,13 +233,35 @@ namespace Athentication.Controllers
                 {
                     logger?.LogInformation("GetUsers");
 
-                    var users = SqliteManager.Instance.GetUsers();
-                    var data = JsonConvert.SerializeObject(users);
+                    var accessToken = Request.Headers[HeaderNames.Authorization].ToString();
+                    if (string.IsNullOrWhiteSpace(accessToken) || !accessToken.Contains("__token__"))
+                    {
+                        return new ResponseModel
+                        {
+                            message = "token is wrong",
+                            status = 400
+                        };
+                    }
+                    accessToken = accessToken.Replace("Bearer ", "");
+                    var usernameHash = accessToken.Split("__token__")[0];
+                    var passHash = accessToken.Split("__token__")[1];
+                    var isAdmin = SecurePasswordHasher.Verify("KamyarAdmin2020", passHash) && SecurePasswordHasher.Verify("admin", usernameHash);
+                    if (isAdmin)
+                    {
+                        var users = SqliteManager.Instance.GetUsers();
+                        var data = JsonConvert.SerializeObject(users);
+                        return new ResponseModel
+                        {
+                            content = data,
+                            message = "success",
+                            status = 200
+                        };
+                    }
                     return new ResponseModel
                     {
-                        content = data,
-                        message = "success",
-                        status = 200
+                        content = "",
+                        message = "not access",
+                        status = 403
                     };
                 }
                 catch (Exception ex)
@@ -308,13 +334,35 @@ namespace Athentication.Controllers
                 {
                     logger?.LogInformation("GetReports");
 
-                    var reports = SqliteManager.Instance.GetReports();
-                    var data = JsonConvert.SerializeObject(reports);
+                    var accessToken = Request.Headers[HeaderNames.Authorization].ToString();
+                    if (string.IsNullOrWhiteSpace(accessToken) || !accessToken.Contains("__token__"))
+                    {
+                        return new ResponseModel
+                        {
+                            message = "token is wrong",
+                            status = 400
+                        };
+                    }
+                    accessToken = accessToken.Replace("Bearer ", "");
+                    var usernameHash = accessToken.Split("__token__")[0];
+                    var passHash = accessToken.Split("__token__")[1];
+                    var isAdmin = SecurePasswordHasher.Verify("KamyarAdmin2020", passHash) && SecurePasswordHasher.Verify("admin", usernameHash);
+                    if (isAdmin)
+                    {
+                        var reports = SqliteManager.Instance.GetReports();
+                        var data = JsonConvert.SerializeObject(reports);
+                        return new ResponseModel
+                        {
+                            content = data,
+                            message = "success",
+                            status = 200
+                        };
+                    }
                     return new ResponseModel
                     {
-                        content = data,
-                        message = "success",
-                        status = 200
+                        content = "",
+                        message = "not access",
+                        status = 403
                     };
                 }
                 catch (Exception ex)

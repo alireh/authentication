@@ -1,0 +1,24 @@
+2022-02-26 14:40:16.7223 Info Message Template Auto Format enabled
+2022-02-26 14:40:16.8331 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 14:40:17.1150 Info Adding target FileTarget(Name=allfile)
+2022-02-26 14:40:17.1687 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 14:40:17.1687 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 14:40:17.3986 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Release\netcoreapp3.1\NLog.config
+2022-02-26 14:43:57.8060 Info Message Template Auto Format enabled
+2022-02-26 14:43:57.8463 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 14:43:57.9896 Info Adding target FileTarget(Name=allfile)
+2022-02-26 14:43:58.0242 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 14:43:58.0242 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 14:43:58.1065 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Release\netcoreapp3.1\NLog.config
+2022-02-26 14:45:10.0601 Info Message Template Auto Format enabled
+2022-02-26 14:45:10.1044 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 14:45:10.2166 Info Adding target FileTarget(Name=allfile)
+2022-02-26 14:45:10.2399 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 14:45:10.2399 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 14:45:10.3301 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Release\netcoreapp3.1\NLog.config
+2022-02-26 14:45:16.2432 Info Message Template Auto Format enabled
+2022-02-26 14:45:16.2610 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 14:45:16.3660 Info Adding target FileTarget(Name=allfile)
+2022-02-26 14:45:16.3676 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 14:45:16.3676 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 14:45:16.4270 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Release\netcoreapp3.1\NLog.config

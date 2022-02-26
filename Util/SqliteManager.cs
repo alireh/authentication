@@ -47,9 +47,9 @@ namespace Athentication.Util
                                 }
                                 SQLiteConnection.CreateFile(connectionString);
 
-                                using (var sqlite2 = new SQLiteConnection(string.Format("Data Source={0}", connectionString)))
+                                using (var sqlite = new SQLiteConnection(string.Format("Data Source={0}", connectionString)))
                                 {
-                                    sqlite2.Open();
+                                    sqlite.Open();
                                     string sql = $"CREATE TABLE {_userTable} ( [ID] INTEGER  PRIMARY KEY NOT NULL" +
                                                                             ", [USERNAME] TEXT NOT NULL" +
                                                                             ", [FIRSTNAME] TEXT NOT NULL" +
@@ -59,19 +59,28 @@ namespace Athentication.Util
                                                                             ", [AGE] INTEGER NOT NULL" +
                                                                             ", [GENDER] INTEGER NOT NULL" +
                                                                             ", [TOKEN] TEXT NULL);";
-                                    SQLiteCommand command = new SQLiteCommand(sql, sqlite2);
+                                    SQLiteCommand command = new SQLiteCommand(sql, sqlite);
                                     command.ExecuteNonQuery();
                                 }
 
-                                using (var sqlite2 = new SQLiteConnection(string.Format("Data Source={0}", connectionString)))
+                                using (var sqlite = new SQLiteConnection(string.Format("Data Source={0}", connectionString)))
                                 {
-                                    sqlite2.Open();
+                                    sqlite.Open();
+                                    var hashPass = SecurePasswordHasher.Hash("KamyarAdmin2020");
+                                    string sql = $"INSERT INTO {_userTable} ([ID], [USERNAME], [FIRSTNAME], [LASTNAME], [PASSWORD], [AGE], [GENDER]) VALUES(1, 'admin', 'admin', 'admin', '{hashPass}', 20, 1);";
+                                    SQLiteCommand command = new SQLiteCommand(sql, sqlite);
+                                    command.ExecuteNonQuery();
+                                }
+
+                                using (var sqlite = new SQLiteConnection(string.Format("Data Source={0}", connectionString)))
+                                {
+                                    sqlite.Open();
                                     string sql = $"CREATE TABLE {_reportTable} ( [ID] INTEGER  PRIMARY KEY NOT NULL" +
                                                                             ", [STATE] TEXT NOT NULL" +
                                                                             ", [ACTION_DATE] TEXT NOT NULL" +
                                                                             ", [USERNAME] TEXT NOT NULL" +
                                                                             ", [USER_ID] INTEGER NOT NULL);";
-                                    SQLiteCommand command = new SQLiteCommand(sql, sqlite2);
+                                    SQLiteCommand command = new SQLiteCommand(sql, sqlite);
                                     command.ExecuteNonQuery();
                                 }
                             }
@@ -181,26 +190,36 @@ namespace Athentication.Util
             }
         }
 
-        public bool ExistsUser(string username, string password)
+        public string ExistsUser(string username, string password)
         {
             try
             {
                 logger?.LogInformation("GetUserCount");
-                var count = ExecuteScalar($"SELECT COUNT(*) FROM {_userTable} WHERE USERNAME = '{username}' AND PASSWORD = '{password}' ");
+                var hashPass = SecurePasswordHasher.Hash(password);
+                var count = ExecuteScalar($"SELECT COUNT(*) FROM {_userTable} WHERE USERNAME = '{username}' ");
                 var exists = count > 0;
                 if (exists)
                 {
-                    string token = Convert.ToBase64String(Guid.NewGuid().ToByteArray());
-                    var user = GetUser(username);
-                    UpdateUserToken(user.Id, token);
+                    var fetchedPass = ExecuteScalarTxt($"SELECT PASSWORD FROM {_userTable} WHERE USERNAME = '{username}' ");
+                    var isMatchePass = SecurePasswordHasher.Verify(password, fetchedPass);
+                    if (isMatchePass)
+                    {
+                        //string token = Convert.ToBase64String(Guid.NewGuid().ToByteArray());
+                        var usernameToken = SecurePasswordHasher.Hash(username);
+                        var passToken = SecurePasswordHasher.Hash(password);
+                        var token = $"{usernameToken}__token__{passToken}";
+                        var user = GetUser(username);
+                        UpdateUserToken(user.Id, token);
+                        return token;
+                    }
                 }
-                return exists;
+                return null;
             }
             catch (Exception ex)
             {
                 logger?.LogError($"GetUserCount Exception Message : {ex.Message}");
                 _sqlCon.Close();
-                return false;
+                return null;
             }
         }
 
@@ -226,7 +245,8 @@ namespace Athentication.Util
             {
                 logger?.LogInformation("ConvertToQueryValue");
                 var gender = userInfo.Gender == null ? -1 : (userInfo.Gender == true ? 1 : 0);
-                return $"'{userInfo.Username}','{userInfo.Firstname}','{userInfo.Lastname}','{userInfo.Email}','{userInfo.Password}','{userInfo.Age}','{gender}','{userInfo.Token}'";
+                var hashPass = SecurePasswordHasher.Hash(userInfo.Password);
+                return $"'{userInfo.Username}','{userInfo.Firstname}','{userInfo.Lastname}','{userInfo.Email}','{hashPass}','{userInfo.Age}','{gender}','{userInfo.Token}'";
             }
             catch (Exception ex)
             {
@@ -288,12 +308,32 @@ namespace Athentication.Util
             return -1;
         }
 
+        private string ExecuteScalarTxt(string txtQuery)
+        {
+            try
+            {
+                logger?.LogInformation("ExecuteScalar");
+                _sqlCon.Open();
+                _sqlCmd = new SQLiteCommand(txtQuery, _sqlCon);
+                var result = _sqlCmd.ExecuteScalar();
+                _sqlCon.Close();
+                return result.ToString();
+            }
+            catch (Exception ex)
+            {
+                _sqlCon.Close();
+                logger?.LogError($"ExecuteScalar Exception Message : {ex.Message}");
+            }
+            return "";
+        }
+
         public void EditUser(UserInfo userInfo)
         {
             try
             {
                 logger?.LogInformation("EditUser");
-                string txtSqlQuery = $"UPDATE {_userTable} SET USERNAME =\"{userInfo.Username}\", FIRSTNAME = \"{userInfo.Firstname}\", LASTNAME = \"{userInfo.Lastname}\", EMAIL =\"{userInfo.Email}\", PASSWORD =\"{userInfo.Password}\", AGE =\"{userInfo.Age}\", GENDER = \"{userInfo.Gender}\", TOKEN = \"{userInfo.Token}\" WHERE ID ={ userInfo.Id} ";
+                var hashPass = SecurePasswordHasher.Hash(userInfo.Password);
+                string txtSqlQuery = $"UPDATE {_userTable} SET USERNAME =\"{userInfo.Username}\", FIRSTNAME = \"{userInfo.Firstname}\", LASTNAME = \"{userInfo.Lastname}\", EMAIL =\"{userInfo.Email}\", PASSWORD =\"{hashPass}\", AGE =\"{userInfo.Age}\", GENDER = \"{userInfo.Gender}\", TOKEN = \"{userInfo.Token}\" WHERE ID ={ userInfo.Id} ";
                 ExecuteQuery(txtSqlQuery);
             }
             catch (Exception ex)

@@ -1,0 +1,78 @@
+2022-02-26 14:45:29.4358 Info Message Template Auto Format enabled
+2022-02-26 14:45:29.4728 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 14:45:29.6255 Info Adding target FileTarget(Name=allfile)
+2022-02-26 14:45:29.6504 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 14:45:29.6504 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 14:45:29.7763 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Debug\netcoreapp3.1\NLog.config
+2022-02-26 14:50:02.1479 Info Message Template Auto Format enabled
+2022-02-26 14:50:02.1808 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 14:50:02.3046 Info Adding target FileTarget(Name=allfile)
+2022-02-26 14:50:02.3267 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 14:50:02.3267 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 14:50:02.4291 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Debug\netcoreapp3.1\NLog.config
+2022-02-26 14:52:49.3767 Info Message Template Auto Format enabled
+2022-02-26 14:52:49.4196 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 14:52:49.5802 Info Adding target FileTarget(Name=allfile)
+2022-02-26 14:52:49.5941 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 14:52:49.5941 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 14:52:49.6871 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Debug\netcoreapp3.1\NLog.config
+2022-02-26 15:05:03.6344 Info Message Template Auto Format enabled
+2022-02-26 15:05:03.6781 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 15:05:03.8321 Info Adding target FileTarget(Name=allfile)
+2022-02-26 15:05:03.8570 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 15:05:03.8570 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 15:05:03.9851 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Debug\netcoreapp3.1\NLog.config
+2022-02-26 15:07:11.7825 Info Message Template Auto Format enabled
+2022-02-26 15:07:11.8211 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 15:07:12.0089 Info Adding target FileTarget(Name=allfile)
+2022-02-26 15:07:12.0410 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 15:07:12.0410 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 15:07:12.1303 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Debug\netcoreapp3.1\NLog.config
+2022-02-26 15:07:33.6188 Info Message Template Auto Format enabled
+2022-02-26 15:07:33.6188 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 15:07:33.7302 Info Adding target FileTarget(Name=allfile)
+2022-02-26 15:07:33.7302 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 15:07:33.7302 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 15:07:33.7902 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Debug\netcoreapp3.1\NLog.config
+2022-02-26 15:08:40.5708 Info Message Template Auto Format enabled
+2022-02-26 15:08:40.6127 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 15:08:40.7645 Info Adding target FileTarget(Name=allfile)
+2022-02-26 15:08:40.8083 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 15:08:40.8083 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 15:08:40.9131 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Debug\netcoreapp3.1\NLog.config
+2022-02-26 15:10:29.2579 Info Message Template Auto Format enabled
+2022-02-26 15:10:29.2844 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 15:10:29.4318 Info Adding target FileTarget(Name=allfile)
+2022-02-26 15:10:29.4501 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 15:10:29.4501 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 15:10:29.5219 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Debug\netcoreapp3.1\NLog.config
+2022-02-26 15:13:11.2095 Info Message Template Auto Format enabled
+2022-02-26 15:13:11.2544 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 15:13:11.4218 Info Adding target FileTarget(Name=allfile)
+2022-02-26 15:13:11.4492 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 15:13:11.4492 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 15:13:11.5391 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Debug\netcoreapp3.1\NLog.config
+2022-02-26 15:15:04.7673 Info Message Template Auto Format enabled
+2022-02-26 15:15:04.7848 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 15:15:04.9237 Info Adding target FileTarget(Name=allfile)
+2022-02-26 15:15:04.9295 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 15:15:04.9295 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 15:15:05.0062 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Debug\netcoreapp3.1\NLog.config
+2022-02-26 15:23:01.0945 Info Message Template Auto Format enabled
+2022-02-26 15:23:01.1589 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 15:23:01.3539 Info Adding target FileTarget(Name=allfile)
+2022-02-26 15:23:01.3750 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 15:23:01.3750 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 15:23:01.5279 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Debug\netcoreapp3.1\NLog.config
+2022-02-26 15:46:56.8343 Info Message Template Auto Format enabled
+2022-02-26 15:46:56.8962 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 15:46:57.0377 Info Adding target FileTarget(Name=allfile)
+2022-02-26 15:46:57.0610 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 15:46:57.0610 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 15:46:57.1609 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Debug\netcoreapp3.1\NLog.config
+2022-02-26 16:00:20.9667 Info Message Template Auto Format enabled
+2022-02-26 16:00:21.0180 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-26 16:00:21.1401 Info Adding target FileTarget(Name=allfile)
+2022-02-26 16:00:21.1662 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-26 16:00:21.1662 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-02-26 16:00:21.2458 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=58, FilePath=C:\Project\Authentication\authentication\bin\Debug\netcoreapp3.1\NLog.config

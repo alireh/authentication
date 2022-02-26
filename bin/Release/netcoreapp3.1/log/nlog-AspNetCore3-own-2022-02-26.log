@@ -1,0 +1,24 @@
+2022-02-26 14:40:17.5238|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 14:40:28.3645|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://127.0.0.1:19053 |url: |action: |
+2022-02-26 14:40:28.4135|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2022-02-26 14:40:28.4162|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2022-02-26 14:40:28.4162|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Project\Authentication\authentication |url: |action: |
+2022-02-26 14:40:30.4472|0|INFO|Athentication.Controllers.MainController|Signin |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:40:31.9404|0|ERROR|Athentication.Controllers.MainController|Signin Message : SQL logic error
+near "TABLE": syntax error |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:40:48.7673|0|INFO|Athentication.Controllers.MainController|Signin |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:40:48.7878|0|INFO|Athentication.Util.SqliteManager|GetUserCount |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:40:48.7904|0|INFO|Athentication.Util.SqliteManager|ExecuteScalar |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:40:48.8445|0|ERROR|Athentication.Util.SqliteManager|GetUserCount Exception Message : Object reference not set to an instance of an object. |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:40:48.8445|0|ERROR|Athentication.Controllers.MainController|Signin Message : Object reference not set to an instance of an object. |url: https://localhost/api/authentication/signin|action: Signin|
+2022-02-26 14:43:58.1944|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 14:44:02.3693|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://127.0.0.1:29831 |url: |action: |
+2022-02-26 14:44:02.4509|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2022-02-26 14:44:02.4509|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2022-02-26 14:44:02.4509|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Project\Authentication\authentication |url: |action: |
+2022-02-26 14:45:10.4143|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 14:45:16.5018|0|DEBUG|Athentication.Program|init main |url: |action: |
+2022-02-26 14:45:17.1185|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://127.0.0.1:3155 |url: |action: |
+2022-02-26 14:45:17.1362|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2022-02-26 14:45:17.1362|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2022-02-26 14:45:17.1362|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Project\Authentication\authentication |url: |action: |
